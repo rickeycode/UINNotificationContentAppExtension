@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="UINNotificationContentAppExtensionModule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2T6-gX-Zx1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3a-Hi-DzZ">
+                                        <rect key="frame" x="130" y="60" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="MeN-Gl-aTP"/>
+                                            <constraint firstAttribute="height" constant="60" id="RWa-Zn-Ag6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Z3a-Hi-DzZ" firstAttribute="centerY" secondItem="2T6-gX-Zx1" secondAttribute="centerY" id="7Bg-F5-nl3"/>
+                                    <constraint firstItem="Z3a-Hi-DzZ" firstAttribute="centerX" secondItem="2T6-gX-Zx1" secondAttribute="centerX" id="ong-7d-B4F"/>
+                                    <constraint firstAttribute="width" secondItem="2T6-gX-Zx1" secondAttribute="height" multiplier="16:9" id="z9w-Ia-CDd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBb-UG-Q9w">
+                                <rect key="frame" x="200" y="130" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="XKl-dv-qoU"/>
+                                    <constraint firstAttribute="height" constant="30" id="ymA-JZ-CnD"/>
+                                </constraints>
+                                <state key="normal" title="CustomButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchupButton:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="biO-oD-oST"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <rect key="frame" x="0.0" y="180" width="320" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="91p-1f-AeL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882353186607361" green="0.74901962280273438" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="GcN-lo-r42" secondAttribute="bottom" symbolic="YES" id="0Q0-KW-PJ6"/>
+                            <constraint firstItem="2T6-gX-Zx1" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="0el-Vd-EM5"/>
+                            <constraint firstItem="2T6-gX-Zx1" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="5f7-pR-tIB"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" symbolic="YES" id="6Vq-gs-PHe"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="PBb-UG-Q9w" secondAttribute="bottom" constant="20" id="6wt-cb-odU"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="2T6-gX-Zx1" secondAttribute="bottom" id="EZy-yo-WwS"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="2T6-gX-Zx1" secondAttribute="trailing" id="JbV-Dk-zZd"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="PBb-UG-Q9w" secondAttribute="trailing" constant="20" id="TcA-Ac-9bp"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="trailing" secondItem="2BE-c3-nQJ" secondAttribute="trailing" id="xYU-dA-WuJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="240"/>
+                    <connections>
+                        <outlet property="customButton" destination="PBb-UG-Q9w" id="RUY-2q-WdP"/>
+                        <outlet property="emptyView" destination="Z3a-Hi-DzZ" id="4xz-wq-cKE"/>
+                        <outlet property="label" destination="GcN-lo-r42" id="lpW-cU-7IG"/>
+                        <outlet property="playerView" destination="2T6-gX-Zx1" id="5w6-7H-PT3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

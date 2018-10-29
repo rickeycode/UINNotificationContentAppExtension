@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		6D378883214B5554009950B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D378882214B5554009950B3 /* AppDelegate.swift */; };
-		6D378885214B5554009950B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D378884214B5554009950B3 /* ViewController.swift */; };
 		6D378888214B5554009950B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D378886214B5554009950B3 /* Main.storyboard */; };
 		6D37888A214B5555009950B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D378889214B5555009950B3 /* Assets.xcassets */; };
 		6D37888D214B5555009950B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D37888B214B5555009950B3 /* LaunchScreen.storyboard */; };
 		6D378898214B5555009950B3 /* UINNotificationContentAppExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D378897214B5555009950B3 /* UINNotificationContentAppExtensionTests.swift */; };
 		6D3788A3214B5555009950B3 /* UINNotificationContentAppExtensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3788A2214B5555009950B3 /* UINNotificationContentAppExtensionUITests.swift */; };
+		6D42B25D214B90CF002BCF3C /* UINUserNotificationEmulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D42B25A214B90CF002BCF3C /* UINUserNotificationEmulatorViewController.swift */; };
+		6D42B266214B9BD9002BCF3C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D42B265214B9BD9002BCF3C /* UserNotifications.framework */; };
+		6D42B268214B9BD9002BCF3C /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D42B267214B9BD9002BCF3C /* UserNotificationsUI.framework */; };
+		6D42B26B214B9BD9002BCF3C /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D42B26A214B9BD9002BCF3C /* NotificationViewController.swift */; };
+		6D42B26E214B9BD9002BCF3C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D42B26C214B9BD9002BCF3C /* MainInterface.storyboard */; };
+		6D42B272214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6D42B263214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6D42B278214BB19B002BCF3C /* waterfall-free-video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D42B277214BB19B002BCF3C /* waterfall-free-video1.mp4 */; };
+		6D42B279214BB19B002BCF3C /* waterfall-free-video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6D42B277214BB19B002BCF3C /* waterfall-free-video1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +38,32 @@
 			remoteGlobalIDString = 6D37887E214B5554009950B3;
 			remoteInfo = UINNotificationContentAppExtension;
 		};
+		6D42B270214B9BD9002BCF3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D378877214B5554009950B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D42B262214B9BD9002BCF3C;
+			remoteInfo = UINNotificationContentAppExtensionModule;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D42B276214B9BD9002BCF3C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6D42B272214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6D37887F214B5554009950B3 /* UINNotificationContentAppExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UINNotificationContentAppExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D378882214B5554009950B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D378884214B5554009950B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D378887214B5554009950B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D378889214B5555009950B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D37888C214B5555009950B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +74,15 @@
 		6D37889E214B5555009950B3 /* UINNotificationContentAppExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UINNotificationContentAppExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D3788A2214B5555009950B3 /* UINNotificationContentAppExtensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINNotificationContentAppExtensionUITests.swift; sourceTree = "<group>"; };
 		6D3788A4214B5555009950B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D42B25A214B90CF002BCF3C /* UINUserNotificationEmulatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINUserNotificationEmulatorViewController.swift; sourceTree = "<group>"; };
+		6D42B263214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UINNotificationContentAppExtensionModule.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D42B265214B9BD9002BCF3C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		6D42B267214B9BD9002BCF3C /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		6D42B26A214B9BD9002BCF3C /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		6D42B26D214B9BD9002BCF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6D42B26F214B9BD9002BCF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D42B277214BB19B002BCF3C /* waterfall-free-video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "waterfall-free-video1.mp4"; sourceTree = "<group>"; };
+		6D42B27A214BB207002BCF3C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +107,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D42B260214B9BD9002BCF3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D42B268214B9BD9002BCF3C /* UserNotificationsUI.framework in Frameworks */,
+				6D42B266214B9BD9002BCF3C /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +125,8 @@
 				6D378881214B5554009950B3 /* UINNotificationContentAppExtension */,
 				6D378896214B5555009950B3 /* UINNotificationContentAppExtensionTests */,
 				6D3788A1214B5555009950B3 /* UINNotificationContentAppExtensionUITests */,
+				6D42B269214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule */,
+				6D42B264214B9BD9002BCF3C /* Frameworks */,
 				6D378880214B5554009950B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +137,7 @@
 				6D37887F214B5554009950B3 /* UINNotificationContentAppExtension.app */,
 				6D378893214B5555009950B3 /* UINNotificationContentAppExtensionTests.xctest */,
 				6D37889E214B5555009950B3 /* UINNotificationContentAppExtensionUITests.xctest */,
+				6D42B263214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,11 +146,12 @@
 			isa = PBXGroup;
 			children = (
 				6D378882214B5554009950B3 /* AppDelegate.swift */,
-				6D378884214B5554009950B3 /* ViewController.swift */,
+				6D42B25A214B90CF002BCF3C /* UINUserNotificationEmulatorViewController.swift */,
 				6D378886214B5554009950B3 /* Main.storyboard */,
 				6D378889214B5555009950B3 /* Assets.xcassets */,
 				6D37888B214B5555009950B3 /* LaunchScreen.storyboard */,
 				6D37888E214B5555009950B3 /* Info.plist */,
+				6D42B277214BB19B002BCF3C /* waterfall-free-video1.mp4 */,
 			);
 			path = UINNotificationContentAppExtension;
 			sourceTree = "<group>";
@@ -125,6 +174,26 @@
 			path = UINNotificationContentAppExtensionUITests;
 			sourceTree = "<group>";
 		};
+		6D42B264214B9BD9002BCF3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D42B27A214BB207002BCF3C /* MediaPlayer.framework */,
+				6D42B265214B9BD9002BCF3C /* UserNotifications.framework */,
+				6D42B267214B9BD9002BCF3C /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D42B269214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule */ = {
+			isa = PBXGroup;
+			children = (
+				6D42B26A214B9BD9002BCF3C /* NotificationViewController.swift */,
+				6D42B26C214B9BD9002BCF3C /* MainInterface.storyboard */,
+				6D42B26F214B9BD9002BCF3C /* Info.plist */,
+			);
+			path = UINNotificationContentAppExtensionModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +204,12 @@
 				6D37887B214B5554009950B3 /* Sources */,
 				6D37887C214B5554009950B3 /* Frameworks */,
 				6D37887D214B5554009950B3 /* Resources */,
+				6D42B276214B9BD9002BCF3C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6D42B271214B9BD9002BCF3C /* PBXTargetDependency */,
 			);
 			name = UINNotificationContentAppExtension;
 			productName = UINNotificationContentAppExtension;
@@ -181,13 +252,30 @@
 			productReference = 6D37889E214B5555009950B3 /* UINNotificationContentAppExtensionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6D42B262214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D42B273214B9BD9002BCF3C /* Build configuration list for PBXNativeTarget "UINNotificationContentAppExtensionModule" */;
+			buildPhases = (
+				6D42B25F214B9BD9002BCF3C /* Sources */,
+				6D42B260214B9BD9002BCF3C /* Frameworks */,
+				6D42B261214B9BD9002BCF3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UINNotificationContentAppExtensionModule;
+			productName = UINNotificationContentAppExtensionModule;
+			productReference = 6D42B263214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6D378877214B5554009950B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "yu tanaka";
 				TargetAttributes = {
@@ -201,6 +289,9 @@
 					6D37889D214B5555009950B3 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 6D37887E214B5554009950B3;
+					};
+					6D42B262214B9BD9002BCF3C = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
@@ -220,6 +311,7 @@
 				6D37887E214B5554009950B3 /* UINNotificationContentAppExtension */,
 				6D378892214B5555009950B3 /* UINNotificationContentAppExtensionTests */,
 				6D37889D214B5555009950B3 /* UINNotificationContentAppExtensionUITests */,
+				6D42B262214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +323,7 @@
 			files = (
 				6D37888D214B5555009950B3 /* LaunchScreen.storyboard in Resources */,
 				6D37888A214B5555009950B3 /* Assets.xcassets in Resources */,
+				6D42B278214BB19B002BCF3C /* waterfall-free-video1.mp4 in Resources */,
 				6D378888214B5554009950B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +342,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D42B261214B9BD9002BCF3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D42B279214BB19B002BCF3C /* waterfall-free-video1.mp4 in Resources */,
+				6D42B26E214B9BD9002BCF3C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,7 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D378885214B5554009950B3 /* ViewController.swift in Sources */,
+				6D42B25D214B90CF002BCF3C /* UINUserNotificationEmulatorViewController.swift in Sources */,
 				6D378883214B5554009950B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +379,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D42B25F214B9BD9002BCF3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D42B26B214B9BD9002BCF3C /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +399,11 @@
 			isa = PBXTargetDependency;
 			target = 6D37887E214B5554009950B3 /* UINNotificationContentAppExtension */;
 			targetProxy = 6D37889F214B5555009950B3 /* PBXContainerItemProxy */;
+		};
+		6D42B271214B9BD9002BCF3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D42B262214B9BD9002BCF3C /* UINNotificationContentAppExtensionModule */;
+			targetProxy = 6D42B270214B9BD9002BCF3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +422,14 @@
 				6D37888C214B5555009950B3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6D42B26C214B9BD9002BCF3C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D42B26D214B9BD9002BCF3C /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -429,6 +552,7 @@
 		6D3788A8214B5555009950B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9AKV8LGU9;
@@ -447,6 +571,7 @@
 		6D3788A9214B5555009950B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9AKV8LGU9;
@@ -540,6 +665,49 @@
 			};
 			name = Release;
 		};
+		6D42B274214B9BD9002BCF3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9AKV8LGU9;
+				INFOPLIST_FILE = UINNotificationContentAppExtensionModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = uin010bm.UINNotificationContentAppExtension.UINNotificationContentAppExtensionModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D42B275214B9BD9002BCF3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9AKV8LGU9;
+				INFOPLIST_FILE = UINNotificationContentAppExtensionModule/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = uin010bm.UINNotificationContentAppExtension.UINNotificationContentAppExtensionModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +743,15 @@
 			buildConfigurations = (
 				6D3788AE214B5555009950B3 /* Debug */,
 				6D3788AF214B5555009950B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D42B273214B9BD9002BCF3C /* Build configuration list for PBXNativeTarget "UINNotificationContentAppExtensionModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D42B274214B9BD9002BCF3C /* Debug */,
+				6D42B275214B9BD9002BCF3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
